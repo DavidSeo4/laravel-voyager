@@ -1,64 +1,83 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# **Instalación de Voyager sobre Laravel y configuración del sitio web y su administración.**
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+- Creamos el proyecto de Laravel desde la terminal de Laragon.
 
-## About Laravel
+- Metemos los comandos npm install y npm run dev.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- Instalamos Voyager sobre el proyecto con los siguientes comandos:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+  1. composer require tcg/voyager
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+  2. php artisan voyager:install --with-dummy
 
-## Learning Laravel
+     ![img](https://lh5.googleusercontent.com/ObLKCdYmWFgbv2Rz6jUcSVWLNelMYk7qv9NB1tRXkyQlKslPxj0oz90l2INzKkoWXa7WiagyNvuwzzbvqnZY3O-Y2DqBJRDwKdsFGUUmw1UjlvjsrwePg9dm4gBUo4oWhn_GAdS3vXNSN88-8w)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+     
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+     - Los datos para iniciar sesión en la aplicación serán: 
 
-## Laravel Sponsors
+       - **email:** admin@admin.com 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+       - **password:** password
 
-### Premium Partners
+         
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+     - La aplicación se verá de la siguiente manera en este paso: 
 
-## Contributing
+       
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+       ![img](https://lh4.googleusercontent.com/6VAVHjzbOXFi3mvMz9PHXQSFDWZjNkgDWjhISS87pKns44NY20OASUNnbNsnKQnUX8p6X155p-KV_gciEGyTlNeVyTdF3aA95EvhiHN3v0f4T7SO3SXZ2vMKijjZiPAeuXmkiqiD7nQk4H_jXA)
 
-## Code of Conduct
+       
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+       - En el caso de esta aplicación las imágenes de gestión de usuarios, posts, y de la propia web se almacenarán en public/storage:
 
-## Security Vulnerabilities
+         ![img](https://lh6.googleusercontent.com/Jn-mK7eaqveWDf5xbzvOBxt-gNMX-2dmjBcCEt5159JBiIObNGwwo2cG-3D5VdkJ902Wugvel9CHLN36C7acmj6E5gaWGXrKsjs8_cy9YKpigixU15BgQaq3zpzvr8am-0p6IoHw7NQEZV7UtQ)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Desde la propia aplicación podremos editar tanto los post como las imágenes asociadas.
+
+  
+
+  ![img](https://lh5.googleusercontent.com/hTyAEJPc1ihngFU1p5c0aF1iiNA1AIFo0v2Xeru6VPwPI4KCEm2MfzMqNReqTm1SsW0rqsW_BNJImQgDSowN83Aa714Edo6HHLTzHH7Jn9VsoYFqlXYT93OSlICaSJKA23PrhWym_XwYy4O-QA)
+
+  
+
+  - A continuación crearemos un nuevo menú a parte del principal para el admin.
+
+  
+
+  ![img](https://lh3.googleusercontent.com/yV2jTerZI99qjt4ceAeTDIb6nQiACaUVcCyCEeBnSYG4DrEhX5ts9-5NVMqA8e2wQNs1G23-AUiEWZHGuRLc1mvs1KWciRQzMy039zcIez2HkB28OdMyhOESnYuH6YfqrX1KZ0jJBb-lCQQROg)
+
+  
+
+  - Creamos los apartados que creamos convenientes desde la aplicación, incluimos un CDN de Bootstrap para darle estilos y ya tendremos un menú funcional preparado.
+
+    
+
+    ![img](https://lh4.googleusercontent.com/Hj_L00s-jeFw7ZaryUX1XYMWk8v9bNNYXG3yzF3f8ZC-Ts-WnGrAPtYRd51JQK1RE-aIqEKAgc0BqFbseKZ1mDTPb_ordw6z1M0zq7uLaifurE95nYTHFPt82WCt8R3aTXLCy2QkOpcfpM5MiA)
+
+    
+
+    ![img](https://lh4.googleusercontent.com/kru-__c-D4F2HJ13PS7itNKTffCjjlrVfHbyj9k0bwZuuMx7fCieqFQyBuULnQMOl00Y5wV2L_AWLUP6m64xgCOLfQnrFncomTFtdWY7o2N88TPdO4McaqCM0iFGHJe22ty9FAQTrs_PKH2wrw)
+
+    
+
+    - Voyager también nos permite crear tablas para las bases de datos desde la propia aplicación, personalizarlas a placer y establecer relaciones:
+
+    
+
+    ![img](https://lh4.googleusercontent.com/Qf6-R-Aon2aqZtxeJfZ-T35r8ZMdtFsZ27lOhQVO0zA-2Zg0kt1T72izZajLelLtUhxwWIbeNq2tVeWsxVCQhETrxeWCvMP7pMFloa_QYnY6mwTa7Gw1xrFjIuScQlssQZWfTgvhm0raOieIoA)
+
+    
+
+    ![img](https://lh6.googleusercontent.com/k_ei4eHjTU1o8Z7FZA2GCN0nzPMoHwNW0eqJHyc6aN1rC0ChP38hcVUbhh_Qdv6vSkCRFdAyuJg4-3BD6yVaZct7GCiEgMYYV4kvF0ZbG4l2LZxqj0lDWU2uN5L9az2eTJ6L6wFB7WK6gDr8lw)
+
+    
+
+    - Además, Voyager muestra en la sección Compass muchos de los comandos que puedes ejecutar en la terminal en relación con la aplicación.
+
+      
+
+      ![img](https://lh4.googleusercontent.com/Kb23UgK0BH1OpS82qYaEwgM-05GhzDkiIjdf3qOQqRb5_jY8H78DQ9Oj0mqTcLhpiYQGnLCrlfl1XWm6MGmwXXxWHXxedkuUyt1LU4WKbvje15pBcw0SIaPc05ZCledLDIhzbQnZv09RDRUIBA)
